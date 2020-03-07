@@ -25,7 +25,7 @@ Endpoint
 
 What should the url which I am going to redirect a user to look like?
 
->https://auth.vatsim.net/oauth/authorize/client_id=8&redirect_uri=https%3A%2F%2Fexample.com%2Fconnect%2Fcallback&response_type=code&scope=full_name+vatsim_details+email+country
+>https://auth.vatsim.net/oauth/authorize?client_id=8&redirect_uri=https%3A%2F%2Fexample.com%2Fconnect%2Fcallback&response_type=code&scope=full_name+vatsim_details+email+country
 
 ## 2. Use the Authorization Code to Request an Access Token
 Once a user has been redirected back from VATSIM you will then need to utilise the authorization code returned to gain an access token. The process of gaining an access token is quite simple, conduct a POST request to the token endpoint with the required information which will then return an access token and a refresh token. 
