@@ -1,4 +1,5 @@
 <p align="center"><img src="https://www.vatsim.net/sites/default/files/vatsim_0.png" width="400"></p>
+
 # VATSIM Connect
 
 VATSIM Connect is an OAuth2.0 authentication service which has been designed to replace the current OAuth 1.0 implementation.
