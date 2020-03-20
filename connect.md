@@ -95,7 +95,7 @@ Make a get request to the API with the following headers.
 API Endpoint
 >https://auth.vatsim.net/api/user
 
-# Return Data Structure
+#### Return Data Structure
 Please Note: This includes all scopes.
 ```
 {
@@ -138,6 +138,22 @@ Please Note: This includes all scopes.
    }
 }
 ```
+# Development Environment
+
+|CID|Password|ATC Rating|Pilot Rating|Region|Division|SubDivision|
+|-----------|---------|------------------|--------------|------|------|------|
+| 10000001 | 10000001 | Observer | NO P Rating | VATOCE | VATPAC | NULL |
+| 10000002 | 10000002 | S1 Student | P1 | VATNA | VATUSA | NULL | 
+| 10000003 | 10000003 | S2 Student | P1,P2 | VATAME | VATIL | NULL |
+| 10000004 | 10000004 | S3 Student | P1, P2, P3 | VATEUR | VATEUD | VATSPA |
+| 10000005 | 10000005 | C1 Controller | P1, P3 | VATASIA | VATWA | VATAFG | 
+| 10000006 | 10000006 | C3 Senior Controller | P2, P3 | VATEUR | VATEUD | VATEIR |
+| 10000007 | 10000007 | I1 Instructor | P1, P2, P3, P4 | VATEUR | VATUK | NULL |
+| 10000008 | 10000008 | I3 Senior Instructor | P1, P4 | VATAME | VATNAF | NULL |
+| 10000009 | 10000009 | SUP Supervisor | P2, P3, P4 | VATAME | VATSAF | NULL |
+| 10000010 | 10000010 | ADM Administrator | P3, P4 | VATEUR | VATEUD | VATFRA |
+| 10000011 | 10000011 | Suspended | P1, P3, P4 | VATOCE | VATNZ | NULL |
+
 # Implementation Contents
   - [PHP](#php)
   - Python
