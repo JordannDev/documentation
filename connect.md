@@ -21,10 +21,10 @@ Required Information
 > scope (The requested scopes as a string, e.g. 'full_name vatsim_details email country')<br>
 
 ### Available Scopes 
-"full_name" => Includes their First_name and Last_name.
+```"full_name" => Includes their First_name and Last_name.
 "email" => Registered VATSIM email.
 "vatsim_details" => Includes ATC Rating, Pilot Rating, Region, Division and Sub Division.
-"country" => Registered country of residence. 
+"country" => Registered country of residence. ```
 
 Endpoint 
 
