@@ -48,7 +48,8 @@ Authorization Endpoint
 
 **Please ensure you are making a POST request, not a GET request**
 
-Response from VATSIM
+Response from VATSIM Example
+`{"scopes":["full_name","vatsim_details","email","country"],"token_type":"Bearer","expires_in":604800,"access_token":"<access_token>","refresh_token":"<refresh_token>"}`
 
 # Available Scopes 
 
