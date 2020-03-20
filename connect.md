@@ -59,7 +59,7 @@ Response from VATSIM Example<br>
 
 ### Token Validity & Continual Access
 VATSIM allows users to choose whether they wish to provide continual access to their data. <br>
-###### Should they wish NOT to provide continual access. <br>
+##### Should they wish NOT to provide continual access. <br>
   - Access Token is valid for 7 days.
   - Access Token is invalidated after one call to the user data endpoint. 
   - Refresh Token provided is invalid and cannot be used to refresh the access token.<br>
