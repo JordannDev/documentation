@@ -20,6 +20,12 @@ Required Information
 > response_type (Always 'code')<br>
 > scope (The requested scopes as a string, e.g. 'full_name vatsim_details email country')<br>
 
+### Available Scopes 
+"full_name" => Includes their First_name and Last_name.
+"email" => Registered VATSIM email.
+"vatsim_details" => Includes ATC Rating, Pilot Rating, Region, Division and Sub Division.
+"country" => Registered country of residence. 
+
 Endpoint 
 
 >https://auth.vatsim.net/oauth/authorize
@@ -48,15 +54,75 @@ Authorization Endpoint
 
 **Please ensure you are making a POST request, not a GET request**
 
-Response from VATSIM Example
+Response from VATSIM Example<br>
 `{"scopes":["full_name","vatsim_details","email","country"],"token_type":"Bearer","expires_in":604800,"access_token":"<access_token>","refresh_token":"<refresh_token>"}`
 
-# Available Scopes 
+# Token Validity & Continual Access
+VATSIM allows users to choose whether they wish to provide continual access to their data. <br>
+Should they wish NOT to provide continual access. <br>
+  - Access Token is valid for 7 days.
+  - Access Token is invalidated after one call to the user data endpoint. 
+  - Refresh Token provided is invalid and cannot be used to refresh the access token.
+Should they wish to provide continual access.<br>
+  - Access Token is valid for 7 days.
+  - Access Token is valid for multiple api calls unless invalidated/revoked by the user.
+  - Refresh Token is valid for 30 days and can refresh the access token provided the user has not invalidated/revoked the token. 
+The term invalidated/revoked is when a user revokes access to an organisation through the "My Data" page at https://auth.vatsim.net.
+
+## 3. Use the Access Token to get the users data
+In order to gain a users data, you must make a GET request to the API with a valid access_token. The access token was returned in the JSON array in part 2. 
+
+Make a get request to the API with the following headers.
+
+```'Authorization' => 'Bearer <token>```
+```'Accept' => 'application/json'```
+
+API Endpoint
+>https://auth.vatsim.net/api/user
 
 # Return Data Structure
-
-
-
+Please Note: This includes all scopes.
+```
+{
+   "data":{
+      "cid":101,
+      "personal":{
+         "name_first":"Web",
+         "name_last":"Team",
+         "email":"web@vatsim.net",
+         "country":{
+            "id":"AU",
+            "name":"Australia"
+         }
+      },
+      "vatsim":{
+         "rating":{
+            "id":8,
+            "long":"Instructor",
+            "short":"I1"
+         },
+         "pilotrating":{
+            "id":0
+         },
+         "division":{
+            "id":"PAC",
+            "name":"Australia (VATPAC)"
+         },
+         "region":{
+            "id":"OCEN",
+            "name":"Oceania"
+         },
+         "subdivision":{
+            "id":null,
+            "name":null
+         }
+      },
+      "oauth":{
+         "token_valid":"true"
+      }
+   }
+}
+```
 # Implementation Contents
   - [PHP](#php)
   - Python
