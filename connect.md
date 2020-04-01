@@ -155,25 +155,11 @@ Please Note: This includes all scopes.
 | 10000011 | 10000011 | Suspended | P1, P3, P4 | VATOCE | VATNZ | NULL |
 
 # Implementation Contents
-  - [PHP](#php)
-  - Python
-  - Go
-  - DotNet
-  - [Laravel](#laravel)
-  - OsTicket
-  - PHPBB Forums
-  - IPBoard Forums
+  - Python (WIP)
+  - Laravel (WIP)
+  - [OsTicket](https://github.com/vatsimnetwork/connect-osticket)
+  - NodeJS (WIP)
+  - Express (WIP)
+  - IPBoard Forums (WIP)
  
 > Is your preffered implementation method missing? Submit your contribution to this documentation via a PR.
-
-# Implementation
-
-## PHP
-~~~php
-<?php echo 'some code';?>
-~~~
-
-## Laravel
-~~~php
-<?php echo 'some beautiful laravel code';?>
-~~~
