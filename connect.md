@@ -160,6 +160,6 @@ Please Note: This includes all scopes.
   - [OsTicket](https://github.com/vatsimnetwork/connect-osticket)
   - NodeJS (WIP)
   - Express (WIP)
-  - IPBoard Forums (WIP)
+  - [IPBoard Forums](https://github.com/vatsimnetwork/connect-ipboard)
  
 > Is your preffered implementation method missing? Submit your contribution to this documentation via a PR.
