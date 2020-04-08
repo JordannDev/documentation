@@ -156,7 +156,7 @@ Please Note: This includes all scopes.
 
 # Implementation Contents
   - Python (WIP)
-  - Laravel (WIP)
+  - [Laravel](https://github.com/vatsimnetwork/connect-laravel)
   - [OsTicket](https://github.com/vatsimnetwork/connect-osticket)
   - NodeJS (WIP)
   - Express (WIP)
