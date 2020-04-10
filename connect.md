@@ -104,6 +104,7 @@ Please Note: This includes all scopes.
       "personal":{
          "name_first":"Web",
          "name_last":"Team",
+         "name_full":"Web Team",
          "email":"web@vatsim.net",
          "country":{
             "id":"AU",
