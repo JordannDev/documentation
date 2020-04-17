@@ -140,6 +140,14 @@ Please Note: This includes all scopes.
 }
 ```
 # Development Environment
+In order to faciliate the development and testing of integrations with VATSIM Connect, we've introduced a development environment. This environment is independent of https://auth.vatsim.net. Please note that the development environment may have staged changes which are NOT in production at https://auth.vatsim.net. 
+
+## Credentials
+In order to access the development environment you will need to use the appropriate endpoints and user CID's and passwords. 
+### Endpoints
+When utilising the development environment, you should simply replace https://auth.vatsim.net with http://auth-dev.vatsim.net. 
+### User CID's and Passwords
+Here is a list of user CID's and passwords that may be utilised within the development environment. 
 
 |CID|Password|ATC Rating|Pilot Rating|Region|Division|SubDivision|
 |-----------|---------|------------------|--------------|------|------|------|
@@ -154,6 +162,9 @@ Please Note: This includes all scopes.
 | 10000009 | 10000009 | SUP Supervisor | P2, P3, P4 | VATAME | VATSAF | NULL |
 | 10000010 | 10000010 | ADM Administrator | P3, P4 | VATEUR | VATEUD | VATFRA |
 | 10000011 | 10000011 | Suspended | P1, P3, P4 | VATOCE | VATNZ | NULL |
+
+### Gaining OAuth Credentials
+To gain a set of OAuth credentials, login with any of the accounts listed above. Within the "Organizations I Manage" section, select to view VATSIM Connect Demo. Select the OAuth tab and click the create button. Here you can create an OAuth client to utilise within you testing environment. Please note, VATSIM may from time to time clear the OAuth client list. If this happens, just recreate the client and update the credentials within your integration. Please be courteous and do NOT delete other peoples clients. 
 
 # Implementation Contents
   - Python (WIP)
