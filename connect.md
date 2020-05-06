@@ -172,6 +172,7 @@ To gain a set of OAuth credentials, login with any of the accounts listed above.
   - [OsTicket](https://github.com/vatsimnetwork/connect-osticket)
   - NodeJS (WIP)
   - Express (WIP)
+  - [GoLang](https://github.com/vatsimnetwork/connect-go)
   - [IPBoard Forums](https://github.com/vatsimnetwork/connect-ipboard)
  
 > Is your preffered implementation method missing? Submit your contribution to this documentation via a PR.
