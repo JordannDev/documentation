@@ -149,19 +149,19 @@ When utilising the development environment, you should simply replace https://au
 ### User CID's and Passwords
 Here is a list of user CID's and passwords that may be utilised within the development environment. 
 
-|CID|Password|ATC Rating|Pilot Rating|Region|Division|SubDivision|
-|-----------|---------|------------------|--------------|------|------|------|
-| 10000001 | 10000001 | Observer | NO P Rating | VATOCE | VATPAC | NULL |
-| 10000002 | 10000002 | S1 Student | P1 | VATNA | VATUSA | NULL | 
-| 10000003 | 10000003 | S2 Student | P1,P2 | VATAME | VATIL | NULL |
-| 10000004 | 10000004 | S3 Student | P1, P2, P3 | VATEUR | VATEUD | VATSPA |
-| 10000005 | 10000005 | C1 Controller | P1, P3 | VATASIA | VATWA | VATAFG | 
-| 10000006 | 10000006 | C3 Senior Controller | P2, P3 | VATEUR | VATEUD | VATEIR |
-| 10000007 | 10000007 | I1 Instructor | P1, P2, P3, P4 | VATEUR | VATUK | NULL |
-| 10000008 | 10000008 | I3 Senior Instructor | P1, P4 | VATAME | VATNAF | NULL |
-| 10000009 | 10000009 | SUP Supervisor | P2, P3, P4 | VATAME | VATSAF | NULL |
-| 10000010 | 10000010 | ADM Administrator | P3, P4 | VATEUR | VATEUD | VATFRA |
-| 10000011 | 10000011 | Suspended | P1, P3, P4 | VATOCE | VATNZ | NULL |
+|CID|Password|ATC Rating|Name|Email|Pilot Rating|Region|Division|SubDivision|
+|-----------|---------|--------------|-----------------|------------------|--------------|------|------|------|
+| 10000001 | 10000001 | Observer | One Web | auth.dev1@vatsim.net | NO P Rating | VATOCE | VATPAC | NULL |
+| 10000002 | 10000002 | S1 Student | Two Web | auth.dev2@vatsim.net | P1 | VATNA | VATUSA | NULL | 
+| 10000003 | 10000003 | S2 Student | Three Web | auth.dev3@vatsim.net | P1,P2 | VATAME | VATIL | NULL |
+| 10000004 | 10000004 | S3 Student | Four Web | auth.dev4@vatsim.net | P1, P2, P3 | VATEUR | VATEUD | VATSPA |
+| 10000005 | 10000005 | C1 Controller | Five Web | auth.dev5@vatsim.net | P1, P3 | VATASIA | VATWA | VATAFG | 
+| 10000006 | 10000006 | C3 Senior Controller | Six Web | auth.dev6@vatsim.net | P2, P3 | VATEUR | VATEUD | VATEIR |
+| 10000007 | 10000007 | I1 Instructor | Seven Web | auth.dev7@vatsim.net | P1, P2, P3, P4 | VATEUR | VATUK | NULL |
+| 10000008 | 10000008 | I3 Senior Instructor | Eight Web | auth.dev8@vatsim.net | P1, P4 | VATAME | VATNAF | NULL |
+| 10000009 | 10000009 | SUP Supervisor | Nine Web | auth.dev9@vatsim.net | P2, P3, P4 | VATAME | VATSAF | NULL |
+| 10000010 | 10000010 | ADM Administrator | Team Web | noreply@vatsim.net | P3, P4 | VATEUR | VATEUD | VATFRA |
+| 10000011 | 10000011 | Suspended | Team Web | noreply@vatsim.net | P1, P3, P4 | VATOCE | VATNZ | NULL |
 
 ### Gaining OAuth Credentials
 To gain a set of OAuth credentials, login with any of the accounts listed above. Within the "Organizations I Manage" section, select to view VATSIM Connect Demo. Select the OAuth tab and click the create button. Here you can create an OAuth client to utilise within you testing environment. Please note, VATSIM may from time to time clear the OAuth client list. If this happens, just recreate the client and update the credentials within your integration. Please be courteous and do NOT delete other peoples clients. 
