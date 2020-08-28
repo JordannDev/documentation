@@ -118,7 +118,9 @@ Please Note: This includes all scopes.
             "short":"I1"
          },
          "pilotrating":{
-            "id":0
+            "id": 15,
+            "long":"Airline Transport Pilot License",
+            "short":"ATPL"
          },
          "division":{
             "id":"PAC",
