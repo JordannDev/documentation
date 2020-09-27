@@ -20,6 +20,10 @@ Required Information
 > response_type (Always 'code')<br>
 > scope (The requested scopes as a string, e.g. 'full_name vatsim_details email country')<br>
 
+Additional Information
+
+> required_scopes (The scopes which are required as a string)<br>
+
 ### Available Scopes 
 ```
 "full_name" => Includes their First_name and Last_name.
